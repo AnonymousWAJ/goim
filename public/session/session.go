@@ -20,7 +20,7 @@ type Session struct {
 }
 
 // NewSessionFactory 创建一个会话工厂
-func NewSessionFactory(driverName, dataSourseName string) (*SessionFactory, error) {
+func NewSessionFactory(driverName, dataSoureName string) (*SessionFactory, error) {
 	db, err := sql.Open(driverName, dataSourseName)
 	if err != nil {
 		panic(err)
